@@ -56,7 +56,7 @@ Class Messages Extends BaseModel {
          * @param int $threadId thread id
          * @param string $messageSenderId message user id
          * @param string $messageBody message body
-         * @return array message data
+         * @return int message id
          */
         public function createMessage($threadId, $messageUserId, $messageBody)
         {
