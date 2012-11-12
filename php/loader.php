@@ -22,5 +22,8 @@ require __DIR__ . '/modules/users.php';
 // loading threads module
 require __DIR__ . '/modules/threads.php';
 
+// loading push module
+require __DIR__ . '/modules/push.php';
+
 /* End of file loader.php */
 /* Location ./loader.php */

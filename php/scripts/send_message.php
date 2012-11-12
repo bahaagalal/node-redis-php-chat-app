@@ -17,6 +17,8 @@ if($thread_id && $message_body && $sender_id)
         
         $messages = new Messages();
         
+        $push = new PushService();
+        
         $message_id = $messages->createMessage($thread_id, $sender_id, $message_body);
         
         $threads->addMessageToThread($thread_id, $message_id); 
@@ -26,6 +28,8 @@ if($thread_id && $message_body && $sender_id)
         $message['user'] = $users->getUser($message['sender_id']);
 
         unset($message['sender_id']);
+        
+        $push->pushMessage($message_id);
 
         echo output_json(TRUE, ERR_EMPTY, $message);
 }
