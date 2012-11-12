@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <div>TODO write content</div>
+        
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/socket.io.js"></script>
+        <script type="text/javascript">
+            var socket = io.connect('localhost', {port: 8000});
+            socket.on('connect', function(){
+                socket.emit('presence online', 'bahaagali');
+            });
+            socket.on('message', function(message){
+                console.log(message);
+            });
+        </script>
+    </body>
+</html>
