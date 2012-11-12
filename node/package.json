@@ -1,0 +1,24 @@
+{
+  "name": "node-redis-php-chat-server",
+  "preferGlobal": "false",
+  "version": "0.1.0",
+  "author": "Bahaa Galal <bahaa.g.ali@gmail.com>",
+  "description": "the node part of a simple node-redis-php realtime chat application",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bahaagali/node-redis-php-chat-app.git"
+  },
+  "keywords": [
+    "chat",
+    "realtime",
+    "redis"
+  ],
+  "dependencies" : {
+    "redis"   :  "0.8.x",
+    "socket.io" :  "0.9.x"
+  }, 
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.8"
+  }
+}
