@@ -162,6 +162,10 @@ $(document).ready(function(){
                     
                     $('#thread-users').html(users_html);
                     
+                    $('#messages-list').animate({
+                        scrollTop: $('#messages-list')[0].scrollHeight
+                    }, "slow");
+                    
                     $('.send-message-form').show();
                 }
                 else
@@ -232,26 +236,33 @@ $(document).ready(function(){
         // what happens when I receive a new message on my socket
         socket.on('message', function(message){
             
-            console.log(message);
+            var selected_thread_id = $('#threads-list li.active a').attr('thread_id');
             
-            var messages = [];
+            if(!selected_thread_id || selected_thread_id != message.threadId)
+            {
+                $('#threads-list a[thread_id=' + message.threadId + ']').click();
+            }
+            else
+            {
+                var messages = [];
                     
-            messages[0] = {
-                avatar: message.senderAvatar,
-                name: message.senderName,
-                time: formatTime(message.time),
-                message: message.body
-            };  
+                messages[0] = {
+                    avatar: message.senderAvatar,
+                    name: message.senderName,
+                    time: formatTime(message.time),
+                    message: message.body
+                };  
 
-            var messages_html  = messages_template({
-                messages: messages
-            });
+                var messages_html  = messages_template({
+                    messages: messages
+                });
                 
-            $('#messages-list').append(messages_html);
+                $('#messages-list').append(messages_html);
                     
-            $('#messages-list').animate({
-                scrollTop: $('#messages-list')[0].scrollHeight
-            }, "slow");
+                $('#messages-list').animate({
+                    scrollTop: $('#messages-list')[0].scrollHeight
+                }, "slow");
+            }
         });
     }
 });
