@@ -82,7 +82,7 @@ $(document).ready(function(){
                     
                     if(response.data[i].users.length > 2)
                     {
-                        no_of_users = ' and ' + response.data[i].users.length + ' more';
+                        no_of_users = ' and ' + (response.data[i].users.length - 1) + ' more';
                     }
                     
                     var message = '';
@@ -154,7 +154,7 @@ $(document).ready(function(){
                     var users_html = users_template({
                         name1: response.data.users[0].name,
                         name2: response.data.users[1].name,
-                        users_count: response.data.users.length,
+                        users_count: (response.data.users.length - 2),
                         more_users: (response.data.users.length > 2)? true : false
                     });
                 
