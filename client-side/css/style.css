@@ -1,0 +1,149 @@
+#messages{
+    font-family: 'Helvetica Neue', sans-serif; 
+    color: #767676;
+    font-size: 13px;
+    margin: 20px;
+}
+.messages-header{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #D9D9D9;
+    width: 100%;
+}
+.messages-header h2{
+    font-weight: bold;
+    color: #2B2B2B;
+    font-size: 24px;
+}
+.messages-header a.btn-new-message{
+    background-image: URL('../images/btn-new-message.png');
+    background-repeat: no-repeat;
+    width: 136px;
+    height: 28px;
+}
+.threads{
+    width: 300px;
+    border-right: 1px solid #D9D9D9;
+}
+.search-box{
+    padding: 10px 10px 10px 0px;
+    border-bottom: 1px solid #D9D9D9;
+}
+.search-box input{
+    border: 1px solid #D9D9D9;
+    height: 30px;
+    padding: 5px;
+    color: #565453;
+    font-size: 13px;
+    font-weight: bold;
+    width: 100%;
+}
+.threads ul{
+    width: 100%;
+    height: 600px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.threads ul li{
+    border-bottom: 1px solid #D9D9D9;
+    height: 75px;
+    padding: 9px;
+}
+.threads ul li img{
+    width: 60px;
+    height: 55px;
+    margin-right: 9px;
+}
+.threads ul li div{
+    width: 200px;
+}
+.threads ul li h3{
+    color: #242424;
+    font-weight: bold;
+    font-size: 13px;
+}
+.threads ul li h5{
+    color: #9E9E9E;
+    font-size: 13px;
+    padding: 3px 0px;
+    font-weight: normal;
+}
+.threads ul li p{
+    color: #3E3E3E;
+    font-size: 13px;
+}
+.threads ul li.unread{
+    background-color: #FFFEE3;
+}
+.threads ul li.active{
+    background-color: #F2F2F2;
+}
+.threads ul li.active div{
+    background-image: URL('../images/arrow.png');
+    background-repeat: no-repeat;
+    background-position: 190px 18px;
+}
+.thread-messages{
+    width: 615px;
+    padding: 25px 0px 25px 30px;
+}
+.thread-messages h3{
+    color: #009DA0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.thread-messages h3 span.separator{
+    color: #2B2B2B;
+}
+.thread-messages ul{
+    height: 500px;
+    overflow-x: hidden;
+    overflow-y: auto
+}
+.thread-messages ul li{
+    width: 100%;
+    padding: 20px 0px;
+    border-bottom: 1px solid #D9D9D9;
+}
+.thread-messages ul li div{
+    width: 500px;
+}
+.thread-messages ul li img{
+    width: 60px;
+    height: 55px;
+    margin-right: 20px;
+}
+.thread-messages ul li h4{
+    color: #242424;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.thread-messages ul li p{
+    font-size: 13px;
+    color: #767676;
+    line-height: 20px;
+}
+.send-message-form{
+    width: 100%;
+    margin-top: 20px;
+}
+.send-message-form img{
+    width: 60px;
+    height: 55px;
+    margin-right: 10px;
+}
+.send-message-form textarea{
+    width: 420px;
+    height: 75px;
+    border: 1px solid #D9D9D9;
+    color: #565453;
+    font-size: 13px;
+    padding: 5px;
+    font-family: "Helvetica Neue";
+}
+.send-message-form a.btn-send{
+    background-image: URL('../images/btn-send-message.png');
+    width: 87px;
+    height: 32px;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,121 @@
+/** reset code **/
+*{
+    padding: 0px;
+    margin: 0px;
+    /*
+     * Hack Fix for chrome,safari,firefox to
+     * reduce padding from box model height instead of adding padding to height
+    */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+a,a:hover,a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+a img,a:hover img,a:visited img{
+    border: 0px;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    direction: ltr;
+}
+input{
+    background: none;
+    border: none;
+    outline: none;
+}
+/** display helpers **/
+.inline-block{
+    display: -moz-inline-stack;
+    display: inline-block;
+    *display: inline; /* Hack Fix IE6/IE7 */
+    *zoom: 1; /* Hack Fix IE6/IE7 */
+    letter-spacing: normal;
+    word-spacing: normal;
+    font-size: 12px;
+}
+.block{
+    display: block;
+}
+.table{
+    display: table;
+}
+.table-row{
+    display: table-row;
+}
+.table-cell{
+    display: table-cell;
+}
+.fixed-table-layout{
+    table-layout: fixed;
+}
+.list-style-none{
+    list-style: none;
+}
+/** hidden and visible styles **/
+.hidden{
+    display: none;
+}
+/* Haxk Fix of white spaces after inline-blocked elements of 4px */
+.white-space-fix{
+    font-size: 0px;
+}
+/* Hack for SEO to show text on images-backgrounded elements */
+.text-indent{
+    text-indent: -3000px;
+}
+/** vertical align helpers **/
+.top-vertical-align{
+    vertical-align: top !important;
+}
+.middle-vertical-align{
+    vertical-align: middle !important;
+}
+.bottom-vertical-align{
+    vertical-align: bottom !important;
+}
+/** float helpers **/
+.clear{
+    clear: both;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/** text-align-helpers **/
+.right-text-align{
+    text-align: right;
+}
+.left-text-align{
+    text-align: left;
+}
+.center-text-align{
+    text-align: center;
+}
+/** background repeat **/
+.repeat-x{
+    background-repeat: repeat-x;
+}
+.repeat-y{
+    background-repeat: repeat-y;
+}
+.repeat-xy{
+    background-repeat: repeat;
+}
+/** wrapper **/
+.wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+/** template **/
+body{
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
