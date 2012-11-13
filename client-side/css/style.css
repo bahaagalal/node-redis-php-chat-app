@@ -118,6 +118,11 @@
     font-weight: bold;
     padding-bottom: 10px;
 }
+.thread-messages ul li h5{
+    color: #9E9E9E;
+    font-size: 13px;
+    font-weight: normal;
+}
 .thread-messages ul li p{
     font-size: 13px;
     color: #767676;
@@ -146,4 +151,18 @@
     width: 87px;
     height: 32px;
     background-repeat: no-repeat;
+}
+.ajax-loader{
+    background-image: URL('../images/ajax-loader.gif');
+    background-repeat: no-repeat;
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    z-index: 9999;
+}
+.ajax-loader-1{
+    margin: 300px 130px;   
+}
+.ajax-loader-2{
+    margin: 270px 300px;
 }

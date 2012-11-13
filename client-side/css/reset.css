@@ -107,6 +107,10 @@ input{
 .repeat-xy{
     background-repeat: repeat;
 }
+/** position **/
+.relative{
+    position: relative;
+}
 /** wrapper **/
 .wrapper{
     width: 960px;
