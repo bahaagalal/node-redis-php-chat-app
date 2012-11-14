@@ -13,9 +13,9 @@ Class RedisInstance {
     
         
         /**
-         * public constructor that initiates a connection to redis server
+         * private constructor that initiates a connection to redis server
          */
-        function __construct() 
+        private function __construct() 
         {
                 self::$redisInstance = new Predis\Client('tcp://127.0.0.1:6379');
         }
